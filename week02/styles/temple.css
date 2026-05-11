@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Arial, sans-serif;    
+}
+header, footer {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+main {
+    width: 25rem;
+    margin: 0 auto;
+    
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+h1{
+    text-align: center;
+}
+img {
+    
+    
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+section {
+    padding: 0 2em 1em;
+    background-color: #ddd;
+    font-size: 0.85rem;
+    line-height: 2;
+}
+
+h2 {
+    padding: 1em 0 0 0;
+    font-size: 1.3rem;
+    border-bottom: solid #000 1px;
+    margin: 1.5em 0 0 0;
+}
+footer {
+    margin-top: 1.5em;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
