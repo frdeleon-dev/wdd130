@@ -6,7 +6,7 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 12px gray;
     
 }
 aside{
@@ -23,7 +23,7 @@ aside img{
     height: auto;
 }
 nav {
-    background-color: darkblue;
+    background-color: rgb(45, 188, 37);
     padding: 10px;
 }
 nav a {
@@ -32,7 +32,8 @@ nav a {
     padding: 20px;
 }
 h1 {
-    color: darkblue;
+    color: rgb(20, 186, 205);
+    text-shadow: 1px 0px 1px  #014e4e;
 }
 p {
     padding: 0;
