@@ -3,19 +3,25 @@
     --primary-color: rgb(41, 137, 216);
     --text-dark: #333;
     --text-light: #eee;
-    --accent-color: rgb(20, 186, 205);
+    --accent-color: rgb(23, 186, 204);
     --border-light: rgba(0, 0, 0, 0.2);
     --border-dark: black;
     --shadow-main: 0 0 12px gray;
     --shadow-footer: 0 0 7px #02330d;
-    --footer-bg: rgb(116, 116, 116);
+    --footer-bg: rgb(53, 52, 52);
     --aside-bg: #e7f8f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 main {
     max-width: 600px;
     margin: auto;
     font-family: var(--main-font);
-    text-align: center;
+    line-height: 1.4;
+    
 }
 main img {
     width: 150px;
@@ -23,44 +29,84 @@ main img {
     border: 1px solid var(--border-dark);
     padding: 2px;
     box-shadow: var(--shadow-main);
-    
+    float: right;
+    margin-left: 20px;
+}
+h1{
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--accent-color);
+    border-bottom: 1px dashed #6e6e6ea9;
+    margin-bottom: 20px
+}
+p {
+    padding: 0 25px;
+    color: #505050;  
+}
+main p {
+    font-style: italic;
+}
+ul.box {
+    font-size: small;
+    margin-left: 20px;
+}
+ul.box li {
+    margin-bottom: 10px;
 }
 aside{
     width: 25rem;
-    margin: auto;
-    border: 1px solid var(--border-light);
     padding: 1rem;
-    background-color: var(--aside-bg);
-    color: var(--text-dark);
-    text-align: center;
     font-family: var(--main-font);
+    position: relative;
+    line-height: 1.5;
+}
+aside p {
+    margin: 10px;
+    
 }
 aside img{
-    width: 200px;
+    width: 240px;
     height: auto;
+    margin: 0 auto;
+    display: block;
+    box-shadow: var(--shadow-main);
+}
+aside h2{
+    position: absolute;
+    top: 35px;
+    left: 135px;
+    color: white;
+    box-shadow: var(--shadow-main);
 }
 nav {
     background-color: var(--primary-color);
-    padding: 10px;
+    font-family: var(--main-font);
 }
 nav a {
     color: var(--text-light);
-    display: block;
+    display: inline-block;
     padding: 20px;
+    text-decoration: none;
 }
-h1 {
-    color: var(--accent-color);
-}
-p {
-    padding: 0;
-    
-}
+
 footer{
     margin-top: 35px;
-    border-top: 1px solid #3b3b3ba9;
+    border-top: 1px solid #ffffffa9;
     text-align: center;
-    color: var(--text-light);
+    
     background-color: var(--footer-bg);
     padding: 1rem;
     box-shadow: var(--shadow-footer);
+}
+footer p {
+    color: var(--text-light);
+}
+/*Class Selectors*/
+.box{
+    margin: 15px auto;
+    border: 1px solid var(--border-light);
+    padding: 2rem;
+    background-color: var(--aside-bg);
+    color: var(--text-dark);   
 }
