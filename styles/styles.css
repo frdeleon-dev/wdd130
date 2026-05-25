@@ -1,15 +1,16 @@
 :root {
     --main-font: Arial, Helvetica, sans-serif;
-    --primary-color: rgb(41, 137, 216);
+    /*--primary-color: rgb(41, 137, 216);*/
+    --primary-color: rgb(0, 130, 150);
     --text-dark: #333;
     --text-light: #eee;
-    --accent-color: rgb(23, 186, 204);
+    --accent-color: rgb(47, 79, 79);
     --border-light: rgba(0, 0, 0, 0.2);
     --border-dark: black;
     --shadow-main: 0 0 12px gray;
     --shadow-footer: 0 0 7px #02330d;
     --footer-bg: rgb(53, 52, 52);
-    --aside-bg: #e7f8f4;
+    --aside-bg: rgb(220, 220, 220);
 }
 
 * {
@@ -32,7 +33,7 @@ nav a {
     padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
-    /*font-weight: 700;*/
+    font-weight: 700;
 }
 
 header,
@@ -76,7 +77,7 @@ h1 {
 
 p {
     padding: 0 25px;
-    color: #505050;
+    color: var(--accent-color);
 }
 
 main p {
