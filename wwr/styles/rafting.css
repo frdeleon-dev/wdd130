@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #0B3C5D;
     --secondary-color: #328CC1;
     --accent1-color: #8C3A00;
@@ -8,40 +8,94 @@
     --heading-font: Arial, sans-serif;
     --body-font: Verdana, sans-serif;
 }
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-family: var(--body-font);
     color: var(--text-color);
 }
-header, main, footer {
+
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
-h1, h2 {
+
+header {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+    box-shadow: 0px 15px 20px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    justify-self: center;
+}
+
+/*
+header div {
+    grid-column: 3/4;
+}
+*/
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
 }
-nav, p, section, article {
+
+p,
+article {
     margin: 16px;
     padding: 8px;
 }
+
 .socialmedia a {
     text-decoration: none;
 }
-.hero{
+
+.hero {
     position: relative;
 }
-.hero img{
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-h1{
+
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -52,16 +106,19 @@ h1{
     color: var(--accent1-color);
     border-bottom: 1px solid var(--primary-color);
 }
-.hero article{
+
+.hero article {
     position: absolute;
     bottom: 10px;
     background-color: var(--background-color);
     opacity: 0.8;
     height: 115px;
     border-bottom: 1px solid var(--accent2-color);
-    
+
 }
-.hero article p{
+
+.hero article p,
+figcaption {
     color: var(--text-color);
     margin: 0.5rem 0 0 1rem;
     line-height: 1.5;
@@ -70,25 +127,106 @@ h1{
     font-style: oblique;
     text-align: justify;
 }
-.hero article img{
+
+.hero article img {
     float: right;
     width: 150px;
     margin: 0 0 0 15px;
 }
 
-footer{
-    /*background-color: var(--secondary-color);*/
-    background-color: var(--primary-color);
-    margin-top: 1rem;
-    text-align: center;
-    
+.history {
+    /*background-color: #328CC1;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr fr;
+    justify-content: center;
 }
-footer p{
+
+/*.history h2,
+.adventure h2 {*/
+section h2 {
+    grid-column: span 3;
+    justify-self: center;
+    padding-top: 25px;
+    /*background-color: #D9B310;*/
+}
+
+.history p {
+    padding: 0;
+    margin: 15px;
+    font-size: 14px;
+    align-self: center;
+}
+
+.history figure {
+    position: relative;
+    justify-self: center;
+}
+
+.history figcaption {
+    bottom: 50px;
+    background-color: var(--background-color);
+    opacity: 0.8;
+    height: 35px;
+    border-bottom: 1px solid var(--accent2-color);
+    margin: auto;
+    padding: 10px;
+}
+
+.history img {
+    height: 275px;
+    width: auto;
+    padding-top: 15px;
+}
+
+.adventure h2 {
+    grid-column: span 3;
+    justify-self: center;
+
+}
+
+.adventure div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.adventure img {
+    width: 125px;
+    display: block;
+    justify-self: center;
+}
+
+.adventure figcaption {
+    justify-self: center;
+    padding: 0;
+    margin: auto;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+footer {
+    /*background-color: var(--secondary-color);*/
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+footer p {
     color: var(--background-color);
 }
-footer img{
+
+footer nav {
+    position: absolute;
+    right: 50px;
+    top: 20px
+}
+
+footer img {
+    display: inline-block;
     width: 30px;
     height: auto;
-    display: inline-block;
-    margin-top: 0;
 }
