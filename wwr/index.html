@@ -1,19 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>White Water Rafting | Home</title>
+    <meta name="description"
+      content="Experience exciting white water rafting adventures for all skill levels.">
+    <meta name="author" content="Francisco De Leon">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <!--Using Font from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-
+        <img src="images/logo-wwr.png" alt="White Water Rafting logo">
+        <div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <img src="images/under-construction.jpg" alt="Web under-construction">
+        <div class="hero">
+
+            <img class="hero_main_image"  src="images/rapids.jpg" alt="Rafting team in action">
+            <img class="image_over"  src="images/rafter.png" alt="Rafting team in action">
+            <h1 class="main_header">White Water Rafting Adventures</h1>
+            <p class="hero-sub">Ride the rapids. <br> Feel the adrenaline. <br>Create unforgettable memories.</p>
+            <a class="hero-button" href="trips.html">Find Your Perfect Trip</a>
+        </div>
+        <section class="home_grid">
+            <h2 class="home_h2">Unforgettable Rafting Experiences</h2>
+            <p class="home_p">Feel the rush of white water rafting 
+                as you navigate exciting rapids and powerful currents.
+                Our guided adventures are designed to give you a safe yet 
+                thrilling experience, surrounded by breathtaking natural 
+                landscapes. Get ready to challenge yourself and create 
+                unforgettable memories on the river.
+            </p>
+            <div class="sub_home_p">
+                
+                <figure>
+                <img src="images/adventure.webp" alt="Group rafting through intense rapids">
+                <figcaption>Adventure</figcaption>
+                </figure>
+                <p>Experience the thrill of white water rafting as you take on
+                 powerful rapids and fast-moving currents. Our guided trips
+                  are designed to deliver excitement, challenge, and 
+                  unforgettable moments surrounded by stunning natural scenery.
+                </p>
+            </div>
+            <div class="sub_home_p">
+            
+
+            <figure>
+                <img src="images/for_everyone.webp" alt="Family enjoying a calm rafting experience">
+                <figcaption>For Everyone</figcaption>
+            </figure>
+            
+            <p>Whether you're a beginner or an experienced adventurer, 
+                we offer rafting trips for all skill levels. Our team ensures 
+                a safe and enjoyable experience, making it the perfect activity
+                 for families, friends, and anyone looking to explore the river.
+            </p>
+            </div>
+            <h2 class="moments">Moments on the River</h2>
+            <div class="home_trip">
+                
+                <figure>
+                <img src="images/rafting-team-fun.webp" alt="friends rafting adventure">
+                <figcaption>Fun and teamwork on every trip</figcaption>
+            </figure>
+            </div>
+            <div class="home_trip">
+                <figure>
+                <img src="images/family-rafting-experience.webp" alt="family rafting experience">
+                <figcaption>Perfect for families and beginners</figcaption>
+            </figure>
+            </div>
+            <div class="home_trip">
+                <figure>
+                <img src="images/friend-rafting-adventure.webp" alt="Friends enjoying a rafting adventure together">
+                <figcaption>Unforgettable moments with friends</figcaption>
+            </figure>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Stay updated with our latest trips and offers.</p>
+        
+            <form>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your Name" required>
+                <label for="email" >Email</label>
+                <input id="email" type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
     </main>
     <footer>
+        <p>&copy; 2026 | White Water Rafting | Francisco De Leon</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </nav>
 
     </footer>
 </body>
+
 </html>
