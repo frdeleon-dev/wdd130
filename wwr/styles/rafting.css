@@ -102,6 +102,11 @@ section {
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+.hero h2{
+    font-size: medium;
+    margin-left: 25px;
+    
+}
 /*agregue book_now h1 como prueba*/
 .main_header_about, .book_now h1 {
     position: absolute;
@@ -114,6 +119,7 @@ section {
     color: var(--accent1-color);
     border-bottom: 1px solid var(--primary-color);
 }
+
 
 /*.main_header_about{
     position: absolute;
@@ -366,8 +372,9 @@ section {
     align-items: stretch;
 }
 .trip_grid_h2{
-    font-size: large;
-    color: #0B3C5D;
+    font-size: 25px;
+    padding-bottom: 15px;
+
 }
 .book_now{
     position: relative;
@@ -415,7 +422,7 @@ section {
 }
 
 .sub_trip_p p{
-    top: 105px;
+    top: 130px;
     margin: 15px 0px;
     font-size: 12px;
 }
@@ -487,7 +494,8 @@ figcaption {
 .hero article img {
     float: right;
     width: 150px;
-    margin: 0 0 0 15px;
+    margin: -20px 0 0 15px;
+    
 }
 
 .history {
